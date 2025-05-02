@@ -20,19 +20,18 @@ if __name__ == "__main__":
 
 
 """ 
-** Which of the following changes will NOT allow the program to work as intended **
-
+Which of the following changes will NOT allow the program to work as intended 
 Pick ONE option
 
 - Replace concurrent.futures.ThreadPoolExecutor() 
   with concurrent.futures.ProcessPoolExecutor()
 
-- Replace loop = asyncio.get_event_loop() with
-   loop = asyncio.new_event_loop().
-
 - Replace result = away loop.run_in_executor(executor,blocking_io) with 
   result = blocking_io(). 
 
-- Replace asyncio.run(main()) with main().
+- ***** Replace loop = asyncio.get_event_loop() with
+        loop = asyncio.new_event_loop().          ********
+
+- ***** Replace asyncio.run(main()) with main().  ********
 
 """
